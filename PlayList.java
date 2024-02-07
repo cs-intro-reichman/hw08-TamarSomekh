@@ -155,10 +155,10 @@ class PlayList {
     private int minIndex(int start) {
         int min = tracks[start].getDuration();
         int index = start;
-        if (start < 0 || start > this.size - 1) {
+        if (start < 0 || start > size - 1) {
             return -1;
         }else{
-            for(int i = start; i < this.size; i++){
+            for(int i = start; i < size; i++){
                 if (tracks[i].getDuration() < min) {
                     index = i;
                 }

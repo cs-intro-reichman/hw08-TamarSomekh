@@ -163,9 +163,9 @@ class PlayList {
                     index = i;
                 }
             }
-            return index;
+           
         }
-        
+        return index;
     }
 
     /** Returns the title of the shortest track in this list. 

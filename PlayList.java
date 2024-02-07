@@ -111,7 +111,7 @@ class PlayList {
     public void remove(int i) {
         if (this.size != this.maxSize && i >= 0 && i < this.size) {
             for(int j = i; j < this.size; j++){
-                tracks[i] = tracks[i+1];
+                tracks[j] = tracks[j+1];
             }
             this.size--;
         }

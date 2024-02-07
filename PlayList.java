@@ -160,6 +160,7 @@ class PlayList {
         }else{
             for(int i = start; i < size; i++){
                 if (tracks[i].getDuration() < min) {
+                    min = tracks[i].getDuration();
                     index = i;
                 }
             }
